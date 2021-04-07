@@ -1,4 +1,5 @@
-function createMenuItem (pictureSrc, review)
+
+function createMenu()
 {
     let menu = document.getElementById("content");
 
@@ -19,21 +20,26 @@ function createMenuItem (pictureSrc, review)
     let theContent = document.createElement('div');
     theContent.className = "content";
 
-
     let menuItems = document.createElement('div');
     menuItems.className = "menu";
+    
+    createMenuItem("./images/Cacao cookies.png", "Cacao cookies baked the the goodness of baking things. All natural ingredients for an all natural cookie.");
+    createMenuItem("./images/hotcoco.png", "Amazingly warm hot coco!");
 
-    let foodItem = document.createElement('div');
-    let food = document.createElement('img');
-    food.src = pictureSrc;
-    food.className = "food-picture";
-    foodItem.appendChild(food);
-    menuItems.appendChild(foodItem);
+    function createMenuItem (pictureSrc, review)
+        {
+        let foodItem = document.createElement('div');
+        let food = document.createElement('img');
+        food.src = pictureSrc;
+        food.className = "food-picture";
+        foodItem.appendChild(food);
+        menuItems.appendChild(foodItem);
 
-    let foodItemReview = document.createElement('div');
-    foodItemReview.className = "item-description";
-    foodItemReview.textContent = review;
-    menuItems.appendChild(foodItemReview);
+        let foodItemReview = document.createElement('div');
+        foodItemReview.className = "item-description";
+        foodItemReview.textContent = review;
+        menuItems.appendChild(foodItemReview);
+        }
 
 
     theContent.appendChild(menuItems);  // add menu to content for tabby
@@ -41,31 +47,7 @@ function createMenuItem (pictureSrc, review)
     menu.appendChild(theTab);       // add content to main page for tabby to display
 }
 
-
-// need to change so adds all items to same tab of menu
-function createMenu ()
-{
-createMenuItem("./images/Cacao cookies.png", "Cacao cookies baked the the goodness of baking things. All natural ingredients for an all natural cookie.");
-//createMenuItem("./images/hotcoco.png", "Amazingly warm hot coco!");
-}
+// later project make module out of menule and create functions to create menu Items externally
 
 
-function createMenuTab () {
-    let menu = document.createElement('INPUT');
-    menu.setAttribute("type", "radio");
-    menu.checked = true;
-    menu.textContent = "FML";
-    menu.id = "tab2";
-    menu.name= "tab";
-
-
-    let menuContent = document.createElement('div');
-    menuContent.id ="menupage" 
-    menuContent.className = "tab";
-    menu.appendChild(menuContent);  //add homepage Tab
-    pages.appendChild(menu);
-}
-
-
-
-export { createMenuItem, createMenu };
+export {createMenu};

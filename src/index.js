@@ -21,7 +21,6 @@ function pageSelector () {
     function toggle (e)
     {
     let tabid = e.target.id; 
-    console.log(typeof tabid);
 
         if (tabid == "menubutton")
         {
@@ -37,7 +36,6 @@ function pageSelector () {
 
         else if (tabid == "contactbutton")
         {
-            console.log("is contact");
             let contactPageToggle = document.getElementById('tab3');
             contactPageToggle.checked = true; 
         }

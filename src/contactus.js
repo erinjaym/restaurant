@@ -22,7 +22,7 @@ function createContactPage ()
 
     let contactInfo = document.createElement('div');
     contactInfo.className = "contact-description";
-    contactInfo.textContent = "You can reach by email at: thebojangles.@gmail.com";
+    contactInfo.textContent = "You can reach us by email at: thebojangles.@gmail.com";
 
     theContent.appendChild(contactInfo);    // add info to content wrapper for tabby
     theTab.appendChild(theContent);         // add content to tab wrapper for tabby

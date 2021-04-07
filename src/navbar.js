@@ -1,5 +1,3 @@
-
-
 function createNavBar () 
 {
     let navbar = document.createElement('div');
@@ -18,18 +16,17 @@ function createNavBar ()
     logoWrap.appendChild(logo);
     navBarContent.appendChild(logoWrap);
 
-    let menuButton = document.createElement('div');
-    menuButton.className = "navbutton";
-    menuButton.id = "menubutton";
-    menuButton.textContent = "Menu";
-    navBarContent.appendChild(menuButton);
-
     let homeButton = document.createElement('div');
     homeButton.className = "navbutton";
     homeButton.id = "homebutton";
     homeButton.textContent = "Home";
     navBarContent.appendChild(homeButton);
 
+    let menuButton = document.createElement('div');
+    menuButton.className = "navbutton";
+    menuButton.id = "menubutton";
+    menuButton.textContent = "Menu";
+    navBarContent.appendChild(menuButton);
 
     let contactButton = document.createElement('div');
     contactButton.className = "navbutton";
