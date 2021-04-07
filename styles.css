@@ -1,7 +1,7 @@
 
 html
 {
-    background-color: rgb(188,201,155);
+background-color: rgb(188,201,155);
 }
 
 .menu
@@ -26,6 +26,18 @@ left: 0;
 position: fixed;
 top: 0;
 width: 100%;
+z-index: 5;
+}
+
+.nav-bar-content
+{
+align-items: bottom;
+display: flex; 
+height: 100px;
+left: 0;
+position: fixed;
+top: 0;
+width: 1100px;
 z-index: 5;
 }
 
@@ -97,7 +109,6 @@ width: 600px;
 
 .homePage
 {
-align-content: center;
 background-color:  beige;
 border-radius: 3%;
 font-size: 2em;
@@ -105,11 +116,11 @@ height: 650px;
 justify-content: center;
 left: 15%;
 padding: 10px;
-position: absolute;
+position: relative;
 top: 120px;
 text-align: center;
 text-decoration: underline;
-width: 1000px;
+width: 800px;
 z-index: 2;
 }
 
