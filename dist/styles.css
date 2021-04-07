@@ -88,7 +88,10 @@ border-radius: 3%;
 font-size: 2em;
 padding: 10px;
 padding-top: 10px;
-height: 400px; 
+position: relative;
+height: 400px;
+top: 115px; 
+left: 40%;
 width: 600px;
 }
 

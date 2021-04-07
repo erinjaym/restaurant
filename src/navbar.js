@@ -25,15 +25,13 @@ function createNavBar ()
     homeButton.className = "navbutton";
     homeButton.id = "homebutton";
     homeButton.textContent = "Home";
-    homeButton.onclick = function () {console.log("order some shit")};
     navbar.appendChild(homeButton);
 
 
     let contactButton = document.createElement('div');
     contactButton.className = "navbutton";
-    contactButton.id = "contact";
+    contactButton.id = "contactbutton";
     contactButton.textContent = "Contact";
-    contactButton.onclick = function () {alert('mo diggity')};
     navbar.appendChild(contactButton);
 
     document.getElementById("content").appendChild(navbar); // append navbar to content
