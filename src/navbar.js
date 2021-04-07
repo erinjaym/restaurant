@@ -6,6 +6,9 @@ function createNavBar ()
     navbar.className = "nav-bar";
     navbar.id = "navbar";
 
+    let navBarContent = document.createElement('div');
+    navBarContent.className = "nav-bar-content";
+
     let logoWrap = document.createElement('div');
     logoWrap.className = "logo";
 
@@ -13,26 +16,29 @@ function createNavBar ()
     logo.src = "./images/logo.jpg";
     logo.ClassName = "logo";
     logoWrap.appendChild(logo);
-    navbar.appendChild(logoWrap);
+    navBarContent.appendChild(logoWrap);
 
     let menuButton = document.createElement('div');
     menuButton.className = "navbutton";
     menuButton.id = "menubutton";
     menuButton.textContent = "Menu";
-    navbar.appendChild(menuButton);
+    navBarContent.appendChild(menuButton);
 
     let homeButton = document.createElement('div');
     homeButton.className = "navbutton";
     homeButton.id = "homebutton";
     homeButton.textContent = "Home";
-    navbar.appendChild(homeButton);
+    navBarContent.appendChild(homeButton);
 
 
     let contactButton = document.createElement('div');
     contactButton.className = "navbutton";
     contactButton.id = "contactbutton";
     contactButton.textContent = "Contact";
-    navbar.appendChild(contactButton);
+    navBarContent.appendChild(contactButton);
+
+
+    navbar.appendChild(navBarContent); // add everythng to nav bar with a placement wrap. 
 
     document.getElementById("content").appendChild(navbar); // append navbar to content
 
