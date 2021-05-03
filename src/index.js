@@ -2,6 +2,8 @@ import {createNavBar} from './navbar.js';
 import {createHome} from './maincontent.js';
 import {createMenu} from './menu.js';
 import {createContactPage} from './contactus.js';
+import './styles.css';
+import './tabsy.css';
 
 createNavBar();
 createContactPage();

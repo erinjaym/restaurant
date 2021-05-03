@@ -47,7 +47,7 @@ function createMenu()
     menu.appendChild(theTab);       // add content to main page for tabby to display
 }
 
-// later project make module out of menule and create functions to create menu Items externally
+// later project make module out of menu and create functions to create menu Items externally
 
 
 export {createMenu};
